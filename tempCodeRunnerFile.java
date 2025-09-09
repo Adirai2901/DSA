@@ -1,1 +1,1 @@
-int y = sc.nextInt();
+int y = 0;

@@ -19,11 +19,8 @@ public class linear_search {
             if(a[i]==key){
                 return i;
             }
-            else{
-                return 0;
-            }
         }
-        return 0;
+        return -1;
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -31,9 +28,17 @@ public class linear_search {
         int x = sc.nextInt();
         int[] arr = new int[x];
         input(arr, x);
+        int y = 0;
         System.out.println("Enter the number you want to search: ");
-        int y = sc.nextInt();
-        System.out.println(linear(arr, x, y));
+        y = sc.nextInt();
+
+        if(linear(arr, x, y)>=0){
+            System.out.println("The element is present at index: "+linear(arr, x, y));
+        }else{
+            System.out.println("The element is not present in the given numbers");
+
+        }
+        
 
     }
     
