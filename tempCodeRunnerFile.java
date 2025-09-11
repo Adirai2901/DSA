@@ -1,1 +1,1 @@
-arr
+int sum = 0;
